@@ -19,25 +19,47 @@ class Test {
     String nums = "0123456789";
     String uncompressed = "";
     String currN = "";
+    // name String;
 
-    for (int i = 0; i < compressed.length(); i++) {
-      char curr = compressed.charAt(i);
-      String currentString = String.valueOf(curr);
+    // List test = [{"test": 1}];
 
-      if (!nums.contains(currentString)) {
-        int n = Integer.parseInt(currN);
-        currN = "";
+    // for (int i = 0; i < compressed.length(); i++) {
+    //   int a = 1;
 
-        while (n > 0) {
-          uncompressed += curr;
-          n -= 1;
-        }
+    //   char curr = compressed.charAt(i);
+    //   String currentString = String.valueOf(curr);
 
-      } else {
-        currN += currentString;
-      }
+    //   if (!nums.contains(currentString)) {
+    //     int n = Integer.parseInt(currN);
+    //     currN = "";
 
+    //     while (n > 0) {
+    //       uncompressed += curr;
+    //       n -= 1;
+    //     }
+
+    //   } else {
+    //     currN += currentString;
+    //   }
+
+    // }
+    // System.out.println("Welcome to the Duke's choice shop!")
+    int x = 3;
+    String test = "";
+    switch(x) {
+      case 3:
+        test = "x";
+      case 9:
+       test = "b";
+       break;
+      default:
+       test = "no";
     }
-    System.out.println(uncompressed);
+
+    System.out.println(test);
   }
 }
+
+
+// main test = new main("ed");
+// System.out.println(test.name)
