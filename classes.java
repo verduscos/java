@@ -1,5 +1,5 @@
 class Customer {
-  String[] name;
+  String name;
   String size = "S";
 
   void setSize(String newSize) {
@@ -9,11 +9,15 @@ class Customer {
   String getSize() {
     return size;
   }
-  // String getName() {
-  //   return name;
-  // }
+  public void getName() {
+    System.out.println(this.name);
+  }
 }
 
-// Customer newCustomer = new Customer("Eddie", "M");
-
-// newCustomer.getName();
+class Main {
+  public static void main(String[] args) {
+    Customer newCustomer = new Customer();
+    newCustomer.name = "eddie";
+    newCustomer.getName();
+  }
+}
